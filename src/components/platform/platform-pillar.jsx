@@ -1,8 +1,9 @@
 'use client'
 
-import { motion, useScroll, useTransform } from 'motion/react'
-
 import { useRef } from 'react'
+
+import { motion, useScroll, useTransform } from 'motion/react'
+import PropTypes from 'prop-types'
 
 import SectionFrame from '@/components/reveal/section-frame'
 import Reveal from '@/components/reveal/reveal'
@@ -105,6 +106,22 @@ const PlatformPillar = ({ pillar: p, index }) => {
       </div>
     </SectionFrame>
   )
+}
+
+PlatformPillar.propTypes = {
+  pillar: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    eyebrow: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    summary: PropTypes.string.isRequired,
+    scene: PropTypes.string.isRequired,
+    promises: PropTypes.arrayOf(PropTypes.string).isRequired,
+    metric: PropTypes.shape({
+      value: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+    }).isRequired,
+  }).isRequired,
+  index: PropTypes.number.isRequired,
 }
 
 export default PlatformPillar

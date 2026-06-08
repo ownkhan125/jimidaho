@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'motion/react'
+import PropTypes from 'prop-types'
 
 import { cn } from '@/utils/cn'
 
@@ -293,6 +294,22 @@ const Scene = ({ variant = 'mountains', className, animated = true, label }) => 
       </svg>
     </div>
   )
+}
+
+Scene.propTypes = {
+  variant: PropTypes.oneOf([
+    'mountains',
+    'farmland',
+    'river',
+    'capitol',
+    'community',
+    'vista',
+    'meeting',
+    'flag',
+  ]),
+  className: PropTypes.string,
+  animated: PropTypes.bool,
+  label: PropTypes.string,
 }
 
 export default Scene

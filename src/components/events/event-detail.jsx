@@ -3,6 +3,7 @@
 import Link from 'next/link'
 
 import { motion } from 'motion/react'
+import PropTypes from 'prop-types'
 
 import SectionFrame from '@/components/reveal/section-frame'
 import Reveal from '@/components/reveal/reveal'
@@ -331,6 +332,37 @@ const EventDetail = ({ event, related }) => {
       )}
     </>
   )
+}
+
+const eventShape = PropTypes.shape({
+  slug: PropTypes.string.isRequired,
+  month: PropTypes.string.isRequired,
+  day: PropTypes.string.isRequired,
+  year: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  venue: PropTypes.string.isRequired,
+  address: PropTypes.string.isRequired,
+  time: PropTypes.string.isRequired,
+  duration: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  region: PropTypes.string.isRequired,
+  seats: PropTypes.number.isRequired,
+  weather: PropTypes.string.isRequired,
+  scene: PropTypes.string.isRequired,
+  excerpt: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  highlights: PropTypes.arrayOf(PropTypes.string).isRequired,
+  agenda: PropTypes.arrayOf(
+    PropTypes.shape({
+      time: PropTypes.string.isRequired,
+      item: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
+})
+
+EventDetail.propTypes = {
+  event: eventShape.isRequired,
+  related: PropTypes.arrayOf(eventShape),
 }
 
 export default EventDetail

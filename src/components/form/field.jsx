@@ -2,6 +2,8 @@
 
 import { forwardRef, useId } from 'react'
 
+import PropTypes from 'prop-types'
+
 import { cn } from '@/utils/cn'
 
 /* Field wrapper providing label + hint + error. Used by Input/Textarea/Select. */
@@ -145,3 +147,47 @@ export const Fieldset = ({ legend, children, className }) => (
     {children}
   </fieldset>
 )
+
+Field.propTypes = {
+  label: PropTypes.node,
+  hint: PropTypes.node,
+  error: PropTypes.string,
+  required: PropTypes.bool,
+  htmlFor: PropTypes.string,
+  children: PropTypes.node,
+  className: PropTypes.string,
+}
+
+Input.propTypes = {
+  className: PropTypes.string,
+  error: PropTypes.string,
+}
+
+Textarea.propTypes = {
+  className: PropTypes.string,
+  error: PropTypes.string,
+  rows: PropTypes.number,
+}
+
+Select.propTypes = {
+  className: PropTypes.string,
+  error: PropTypes.string,
+  children: PropTypes.node,
+}
+
+Checkbox.propTypes = {
+  label: PropTypes.node.isRequired,
+}
+
+RadioChip.propTypes = {
+  label: PropTypes.node.isRequired,
+  name: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+  defaultChecked: PropTypes.bool,
+}
+
+Fieldset.propTypes = {
+  legend: PropTypes.node,
+  children: PropTypes.node,
+  className: PropTypes.string,
+}

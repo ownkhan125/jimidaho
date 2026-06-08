@@ -3,6 +3,7 @@
 import { useState } from 'react'
 
 import { AnimatePresence, motion } from 'motion/react'
+import PropTypes from 'prop-types'
 
 import { Field, Input, Select, Checkbox } from '@/components/form/field'
 import KineticButton from '@/components/ui/kinetic-button'
@@ -195,6 +196,15 @@ const RsvpForm = ({ event }) => {
       </AnimatePresence>
     </div>
   )
+}
+
+RsvpForm.propTypes = {
+  event: PropTypes.shape({
+    month: PropTypes.string.isRequired,
+    day: PropTypes.string.isRequired,
+    year: PropTypes.string.isRequired,
+    venue: PropTypes.string.isRequired,
+  }).isRequired,
 }
 
 export default RsvpForm

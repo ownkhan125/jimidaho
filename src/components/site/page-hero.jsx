@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'motion/react'
+import PropTypes from 'prop-types'
 
 import SplitText from '@/components/reveal/split-text'
 import Reveal from '@/components/reveal/reveal'
@@ -150,6 +151,15 @@ const PageHero = ({ eyebrow, title, description, children, className, tone = 'cr
       </div>
     </section>
   )
+}
+
+PageHero.propTypes = {
+  eyebrow: PropTypes.node,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string,
+  children: PropTypes.node,
+  className: PropTypes.string,
+  tone: PropTypes.oneOf(['cream', 'dark']),
 }
 
 export default PageHero

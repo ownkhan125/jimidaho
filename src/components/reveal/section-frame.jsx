@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'motion/react'
+import PropTypes from 'prop-types'
 
 import { useInView } from '@/hooks/use-in-view'
 import { EASE, sectionBuild } from '@/animations/variants'
@@ -78,6 +79,17 @@ const SectionFrame = ({
       )}
     </motion.section>
   )
+}
+
+SectionFrame.propTypes = {
+  id: PropTypes.string,
+  className: PropTypes.string,
+  innerClassName: PropTypes.string,
+  topBorder: PropTypes.bool,
+  bottomBorder: PropTypes.bool,
+  eyebrow: PropTypes.node,
+  number: PropTypes.node,
+  children: PropTypes.node,
 }
 
 export default SectionFrame

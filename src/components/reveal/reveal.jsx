@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'motion/react'
+import PropTypes from 'prop-types'
 
 import { useInView } from '@/hooks/use-in-view'
 import { EASE } from '@/animations/variants'
@@ -47,6 +48,21 @@ const Reveal = ({
       {children}
     </Tag>
   )
+}
+
+Reveal.propTypes = {
+  as: PropTypes.string,
+  className: PropTypes.string,
+  children: PropTypes.node,
+  x: PropTypes.number,
+  y: PropTypes.number,
+  scale: PropTypes.number,
+  duration: PropTypes.number,
+  delay: PropTypes.number,
+  threshold: PropTypes.number,
+  rootMargin: PropTypes.string,
+  once: PropTypes.bool,
+  asChild: PropTypes.bool,
 }
 
 export default Reveal

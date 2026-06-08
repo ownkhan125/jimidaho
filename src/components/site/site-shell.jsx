@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 import Header from '@/components/site/header'
 import Footer from '@/components/site/footer'
 
@@ -9,6 +11,10 @@ const SiteShell = ({ children }) => {
       <Footer />
     </>
   )
+}
+
+SiteShell.propTypes = {
+  children: PropTypes.node.isRequired,
 }
 
 export default SiteShell

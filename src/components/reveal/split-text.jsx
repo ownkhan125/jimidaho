@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'motion/react'
+import PropTypes from 'prop-types'
 
 import { EASE } from '@/animations/variants'
 import { cn } from '@/utils/cn'
@@ -63,6 +64,18 @@ const SplitText = ({
       })}
     </Tag>
   )
+}
+
+SplitText.propTypes = {
+  as: PropTypes.string,
+  text: PropTypes.string,
+  className: PropTypes.string,
+  wordClassName: PropTypes.string,
+  inView: PropTypes.bool,
+  delay: PropTypes.number,
+  duration: PropTypes.number,
+  stagger: PropTypes.number,
+  y: PropTypes.number,
 }
 
 export default SplitText
