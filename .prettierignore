@@ -1,0 +1,7 @@
+.next
+node_modules
+public
+.claude
+package-lock.json
+*.md
+*.css
