@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from 'react'
 
-import { AnimatePresence, motion, useMotionValue } from 'motion/react'
+import { motion, useMotionValue } from 'motion/react'
 import PropTypes from 'prop-types'
 
 import { cn } from '@/utils/cn'
@@ -165,6 +165,22 @@ const Swiper = ({
       </div>
     </div>
   )
+}
+
+Swiper.propTypes = {
+  items: PropTypes.array.isRequired,
+  renderItem: PropTypes.func.isRequired,
+  perView: PropTypes.shape({
+    base: PropTypes.number,
+    sm: PropTypes.number,
+    md: PropTypes.number,
+    lg: PropTypes.number,
+  }),
+  gap: PropTypes.number,
+  ariaLabel: PropTypes.string,
+  className: PropTypes.string,
+  autoPlay: PropTypes.bool,
+  autoPlayMs: PropTypes.number,
 }
 
 export default Swiper
