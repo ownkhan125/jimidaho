@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Feed 10 — Magazine Cover</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,900&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#1a1a1a;display:flex;align-items:center;justify-content:center;min-height:100vh;font-family:'Montserrat',sans-serif}
+  .post{
+    width:1080px;height:1080px;position:relative;overflow:hidden;color:#fff;
+    background:
+      linear-gradient(180deg, rgba(0,0,4,.4) 0%, rgba(0,0,4,.1) 40%, rgba(0,0,4,.85) 100%),
+      url('https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?w=1200&q=80') center/cover;
+  }
+  .masthead{
+    position:absolute;top:50px;left:50px;right:50px;
+    display:flex;justify-content:space-between;align-items:flex-end;
+    border-bottom:1px solid rgba(255,255,255,.3);padding-bottom:20px;
+  }
+  .masthead .title{
+    font-family:'Playfair Display',serif;font-weight:900;font-style:italic;font-size:120px;line-height:.85;letter-spacing:-4px;
+  }
+  .masthead .title .red{color:#FF0D00}
+  .masthead .right{text-align:right;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.7);line-height:2}
+  .strap{
+    position:absolute;top:240px;left:50px;right:50px;display:flex;justify-content:space-between;
+    font-size:10px;letter-spacing:4px;text-transform:uppercase;color:rgba(255,255,255,.5);
+  }
+  .feature-tag{
+    position:absolute;left:50px;top:330px;
+    background:#FF0D00;color:#fff;padding:8px 16px;font-size:11px;letter-spacing:4px;text-transform:uppercase;font-weight:700;
+  }
+  .cover-line{
+    position:absolute;left:50px;right:50px;top:400px;
+    font-family:'Playfair Display',serif;font-weight:900;font-size:96px;line-height:.95;letter-spacing:-2px;
+    max-width:780px;
+  }
+  .cover-line em{font-style:italic;color:#FF5C50;font-weight:400}
+  .stories-list{
+    position:absolute;left:50px;bottom:230px;right:50px;
+    display:grid;grid-template-columns:1fr 1fr 1fr;gap:30px;
+    border-top:1px solid rgba(255,255,255,.2);padding-top:24px;
+  }
+  .stories-list .item .num{font-family:'Playfair Display',serif;font-weight:900;font-size:32px;color:#FF0D00;line-height:1}
+  .stories-list .item .head{font-family:'Playfair Display',serif;font-weight:700;font-size:18px;margin-top:8px;line-height:1.2}
+  .stories-list .item .desc{font-size:11px;color:rgba(255,255,255,.65);margin-top:8px;line-height:1.5;letter-spacing:.5px}
+  .barcode{position:absolute;bottom:60px;left:50px;display:flex;align-items:center;gap:14px}
+  .barcode .bars{display:flex;gap:2px;align-items:flex-end}
+  .barcode .bars span{display:block;width:3px;background:#fff}
+  .barcode .info{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.6)}
+  .price{position:absolute;bottom:60px;right:50px;text-align:right}
+  .price .lbl{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.5)}
+  .price .val{font-family:'Playfair Display',serif;font-weight:900;font-size:36px;letter-spacing:-1px}
+</style>
+</head>
+<body>
+<div class="post">
+  <div class="masthead">
+    <div class="title">VO<span class="red">X</span>.</div>
+    <div class="right">
+      Issue No. 10<br/>
+      Vol. III<br/>
+      Summer · 2026
+    </div>
+  </div>
+  <div class="strap">
+    <span>The Independent Edit</span>
+    <span>Lorem · Ipsum · Dolor · Sit</span>
+    <span>$8.50 USD</span>
+  </div>
+  <div class="feature-tag">Cover Story</div>
+  <div class="cover-line">Lorem <em>ipsum</em><br/>dolor sit, amet<br/>consectetur.</div>
+  <div class="stories-list">
+    <div class="item">
+      <div class="num">01</div>
+      <div class="head">The Long Road Home</div>
+      <div class="desc">Lorem ipsum dolor sit amet consectetur adipiscing elit.</div>
+    </div>
+    <div class="item">
+      <div class="num">02</div>
+      <div class="head">A Letter to the Future</div>
+      <div class="desc">Sed do eiusmod tempor incididunt ut labore et dolore magna.</div>
+    </div>
+    <div class="item">
+      <div class="num">03</div>
+      <div class="head">Voices in the Valley</div>
+      <div class="desc">Ut enim ad minim veniam quis nostrud exercitation.</div>
+    </div>
+  </div>
+  <div class="barcode">
+    <div class="bars">
+      <span style="height:32px"></span><span style="height:24px"></span><span style="height:32px"></span><span style="height:18px"></span><span style="height:30px"></span><span style="height:24px"></span><span style="height:32px"></span><span style="height:14px"></span><span style="height:28px"></span><span style="height:32px"></span><span style="height:22px"></span><span style="height:30px"></span>
+    </div>
+    <div class="info">10 · 2026</div>
+  </div>
+  <div class="price"><div class="lbl">Edition</div><div class="val">№ 010</div></div>
+</div>
+</body>
+</html>

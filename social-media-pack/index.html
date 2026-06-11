@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Social Media Campaign Pack — Index</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#0a0a0a;color:#fff;font-family:'Montserrat',sans-serif;min-height:100vh;padding:60px}
+  h1{font-family:'Playfair Display',serif;font-weight:900;font-size:64px;line-height:.9;letter-spacing:-2px;margin-bottom:8px}
+  h1 em{font-style:italic;color:#FF0D00;font-weight:400}
+  .subtitle{font-size:13px;letter-spacing:4px;text-transform:uppercase;color:#9C958C;margin-bottom:60px}
+  h2{font-family:'Playfair Display',serif;font-weight:900;font-style:italic;font-size:32px;margin:40px 0 24px;color:#FF5C50}
+  .feed-grid{display:grid;grid-template-columns:repeat(auto-fill, minmax(280px, 1fr));gap:24px}
+  .story-grid{display:grid;grid-template-columns:repeat(auto-fill, minmax(180px, 1fr));gap:24px}
+  .card{display:block;text-decoration:none;color:#fff;background:#141414;border:1px solid #222;overflow:hidden;transition:none}
+  .card .frame{position:relative;background:#0a0a0a}
+  .card.feed .frame{aspect-ratio:1/1}
+  .card.story .frame{aspect-ratio:9/16}
+  .card iframe{width:100%;height:100%;border:none;pointer-events:none;display:block}
+  .card .meta{padding:14px 16px;border-top:1px solid #222;display:flex;justify-content:space-between;align-items:center}
+  .card .meta .name{font-size:11px;letter-spacing:1px;font-weight:600}
+  .card .meta .num{font-family:'Playfair Display',serif;font-weight:900;font-size:14px;color:#FF0D00}
+  .feed-iframe-wrap{position:relative;width:100%;aspect-ratio:1/1;overflow:hidden}
+  .feed-iframe-wrap iframe{position:absolute;top:0;left:0;width:1080px;height:1080px;transform-origin:top left;transform:scale(.26)}
+  .story-iframe-wrap{position:relative;width:100%;aspect-ratio:9/16;overflow:hidden}
+  .story-iframe-wrap iframe{position:absolute;top:0;left:0;width:540px;height:960px;transform-origin:top left;transform:scale(.34)}
+</style>
+</head>
+<body>
+<h1>Social Media <em>Campaign Pack.</em></h1>
+<div class="subtitle">— 10 Feed Posts · 10 Stories · Lorem Ipsum Series —</div>
+
+<h2>Feed Posts (1:1)</h2>
+<div class="feed-grid">
+  <a class="card feed" href="feed/01-bold-quote.html"><div class="feed-iframe-wrap"><iframe src="feed/01-bold-quote.html"></iframe></div><div class="meta"><span class="name">Bold Quote</span><span class="num">01</span></div></a>
+  <a class="card feed" href="feed/02-hero-announcement.html"><div class="feed-iframe-wrap"><iframe src="feed/02-hero-announcement.html"></iframe></div><div class="meta"><span class="name">Hero Announcement</span><span class="num">02</span></div></a>
+  <a class="card feed" href="feed/03-diagonal-split.html"><div class="feed-iframe-wrap"><iframe src="feed/03-diagonal-split.html"></iframe></div><div class="meta"><span class="name">Diagonal Split</span><span class="num">03</span></div></a>
+  <a class="card feed" href="feed/04-event-date.html"><div class="feed-iframe-wrap"><iframe src="feed/04-event-date.html"></iframe></div><div class="meta"><span class="name">Event Date</span><span class="num">04</span></div></a>
+  <a class="card feed" href="feed/05-testimonial-portrait.html"><div class="feed-iframe-wrap"><iframe src="feed/05-testimonial-portrait.html"></iframe></div><div class="meta"><span class="name">Testimonial</span><span class="num">05</span></div></a>
+  <a class="card feed" href="feed/06-statistic-hero.html"><div class="feed-iframe-wrap"><iframe src="feed/06-statistic-hero.html"></iframe></div><div class="meta"><span class="name">Statistic Hero</span><span class="num">06</span></div></a>
+  <a class="card feed" href="feed/07-stat-grid.html"><div class="feed-iframe-wrap"><iframe src="feed/07-stat-grid.html"></iframe></div><div class="meta"><span class="name">Stat Grid</span><span class="num">07</span></div></a>
+  <a class="card feed" href="feed/08-community-grid.html"><div class="feed-iframe-wrap"><iframe src="feed/08-community-grid.html"></iframe></div><div class="meta"><span class="name">Community Grid</span><span class="num">08</span></div></a>
+  <a class="card feed" href="feed/09-bold-cta.html"><div class="feed-iframe-wrap"><iframe src="feed/09-bold-cta.html"></iframe></div><div class="meta"><span class="name">Bold CTA</span><span class="num">09</span></div></a>
+  <a class="card feed" href="feed/10-magazine-cover.html"><div class="feed-iframe-wrap"><iframe src="feed/10-magazine-cover.html"></iframe></div><div class="meta"><span class="name">Magazine Cover</span><span class="num">10</span></div></a>
+</div>
+
+<h2>Stories (9:16)</h2>
+<div class="story-grid">
+  <a class="card story" href="stories/01-vertical-quote.html"><div class="story-iframe-wrap"><iframe src="stories/01-vertical-quote.html"></iframe></div><div class="meta"><span class="name">Vertical Quote</span><span class="num">01</span></div></a>
+  <a class="card story" href="stories/02-photo-fullbleed.html"><div class="story-iframe-wrap"><iframe src="stories/02-photo-fullbleed.html"></iframe></div><div class="meta"><span class="name">Full Bleed</span><span class="num">02</span></div></a>
+  <a class="card story" href="stories/03-countdown.html"><div class="story-iframe-wrap"><iframe src="stories/03-countdown.html"></iframe></div><div class="meta"><span class="name">Countdown</span><span class="num">03</span></div></a>
+  <a class="card story" href="stories/04-sticker-poll.html"><div class="story-iframe-wrap"><iframe src="stories/04-sticker-poll.html"></iframe></div><div class="meta"><span class="name">Poll Sticker</span><span class="num">04</span></div></a>
+  <a class="card story" href="stories/05-editorial-polaroid.html"><div class="story-iframe-wrap"><iframe src="stories/05-editorial-polaroid.html"></iframe></div><div class="meta"><span class="name">Polaroid</span><span class="num">05</span></div></a>
+  <a class="card story" href="stories/06-vertical-stats.html"><div class="story-iframe-wrap"><iframe src="stories/06-vertical-stats.html"></iframe></div><div class="meta"><span class="name">Vertical Stats</span><span class="num">06</span></div></a>
+  <a class="card story" href="stories/07-split-then-now.html"><div class="story-iframe-wrap"><iframe src="stories/07-split-then-now.html"></iframe></div><div class="meta"><span class="name">Then / Now</span><span class="num">07</span></div></a>
+  <a class="card story" href="stories/08-quote-stack.html"><div class="story-iframe-wrap"><iframe src="stories/08-quote-stack.html"></iframe></div><div class="meta"><span class="name">Quote Stack</span><span class="num">08</span></div></a>
+  <a class="card story" href="stories/09-big-announcement.html"><div class="story-iframe-wrap"><iframe src="stories/09-big-announcement.html"></iframe></div><div class="meta"><span class="name">Big Announcement</span><span class="num">09</span></div></a>
+  <a class="card story" href="stories/10-swipe-up-cta.html"><div class="story-iframe-wrap"><iframe src="stories/10-swipe-up-cta.html"></iframe></div><div class="meta"><span class="name">Swipe-Up CTA</span><span class="num">10</span></div></a>
+</div>
+</body>
+</html>

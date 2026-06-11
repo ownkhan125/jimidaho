@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Feed 03 — Diagonal Split</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#1a1a1a;display:flex;align-items:center;justify-content:center;min-height:100vh;font-family:'Montserrat',sans-serif}
+  .post{width:1080px;height:1080px;position:relative;overflow:hidden;color:#fff;background:#001A3E}
+  .red-half{
+    position:absolute;inset:0;background:#FF0D00;
+    clip-path:polygon(0 0, 100% 0, 100% 100%, 60% 100%);
+  }
+  .navy-half{
+    position:absolute;inset:0;background:linear-gradient(135deg,#000004 0%, #001A3E 60%, #003680 100%);
+    clip-path:polygon(0 0, 60% 100%, 0 100%);
+  }
+  .diagonal-line{
+    position:absolute;inset:0;
+    background:linear-gradient(to bottom right, transparent 49.5%, #fff 49.5%, #fff 50.5%, transparent 50.5%);
+    opacity:.6;
+  }
+  .navy-title{
+    position:absolute;left:60px;top:130px;
+    font-family:'Playfair Display',serif;font-weight:900;font-size:96px;line-height:.95;letter-spacing:-2px;
+    max-width:380px;
+  }
+  .navy-title em{font-style:italic;color:#FF5C50;font-weight:400}
+  .navy-sub{
+    position:absolute;left:60px;top:540px;
+    font-size:13px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.6);max-width:340px;line-height:1.6;
+  }
+  .red-eyebrow{
+    position:absolute;right:60px;top:340px;
+    font-size:11px;letter-spacing:5px;text-transform:uppercase;color:rgba(255,255,255,.85);
+    writing-mode:vertical-rl;transform:rotate(180deg);
+  }
+  .red-headline{
+    position:absolute;right:80px;top:560px;text-align:right;max-width:380px;
+    font-family:'Montserrat',sans-serif;font-weight:900;font-size:58px;line-height:.95;letter-spacing:-1.5px;
+    text-transform:uppercase;
+  }
+  .red-tag{
+    position:absolute;right:80px;bottom:90px;text-align:right;
+    font-size:11px;letter-spacing:4px;text-transform:uppercase;color:rgba(255,255,255,.9);
+  }
+  .red-tag .num{font-family:'Playfair Display',serif;font-weight:900;font-size:70px;letter-spacing:-2px;display:block;color:#fff;line-height:1;margin-bottom:6px}
+  .corner-icon{position:absolute;top:60px;right:60px;width:56px;height:56px;border:2px solid #fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:900;font-size:22px}
+  .footer-brand{position:absolute;bottom:60px;left:60px;font-family:'Playfair Display',serif;font-weight:900;font-size:14px;letter-spacing:2px}
+  .footer-brand .accent{color:#FF5C50}
+</style>
+</head>
+<body>
+<div class="post">
+  <div class="red-half"></div>
+  <div class="navy-half"></div>
+  <div class="diagonal-line"></div>
+  <div class="navy-title">Bold <em>ideas.</em><br/>Brave action.</div>
+  <div class="navy-sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.</div>
+  <div class="red-eyebrow">— The Campaign Edit —</div>
+  <div class="red-headline">Stand for <br/>something <br/>real.</div>
+  <div class="red-tag"><span class="num">01</span>Issue No. One</div>
+  <div class="corner-icon">L</div>
+  <div class="footer-brand"><span class="accent">LOREM</span> · IPSUM · 2026</div>
+</div>
+</body>
+</html>

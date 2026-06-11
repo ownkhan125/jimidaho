@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Story 04 — Poll Sticker</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#1a1a1a;display:flex;align-items:center;justify-content:center;min-height:100vh;font-family:'Montserrat',sans-serif;padding:20px}
+  .story{
+    width:540px;height:960px;position:relative;overflow:hidden;color:#fff;
+    background:
+      linear-gradient(180deg, rgba(0,26,62,.5) 0%, rgba(0,0,4,.85) 100%),
+      url('https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=800&q=80') center/cover;
+  }
+  .brand-top{position:absolute;top:50px;left:40px;font-family:'Playfair Display',serif;font-weight:900;font-size:14px;letter-spacing:2px;color:#fff;z-index:5}
+  .brand-top .r{color:#FF0D00}
+  .brand-meta{position:absolute;top:50px;right:40px;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.6);font-weight:600;z-index:5}
+  .ask-label{
+    position:absolute;top:140px;left:0;right:0;text-align:center;
+    font-size:11px;letter-spacing:6px;text-transform:uppercase;color:#FF5C50;font-weight:600;z-index:5;
+  }
+  .question{
+    position:absolute;top:200px;left:30px;right:30px;text-align:center;z-index:5;
+    font-family:'Playfair Display',serif;font-weight:900;font-size:60px;line-height:.98;letter-spacing:-1.5px;
+  }
+  .question em{font-style:italic;color:#FF5C50;font-weight:400}
+  .poll-sticker{
+    position:absolute;top:500px;left:50%;transform:translateX(-50%) rotate(-3deg);
+    width:88%;background:rgba(255,255,255,.95);color:#000004;
+    border-radius:18px;padding:24px;z-index:5;
+    box-shadow:0 30px 80px rgba(0,0,0,.4);
+  }
+  .poll-sticker .q{font-family:'Playfair Display',serif;font-weight:700;font-size:22px;text-align:center;margin-bottom:18px;letter-spacing:-.3px}
+  .poll-options{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .poll-options .opt{
+    background:#F5F3F0;padding:18px;text-align:center;border-radius:12px;
+    font-weight:700;font-size:14px;letter-spacing:1px;text-transform:uppercase;
+  }
+  .poll-options .opt.red{background:#FF0D00;color:#fff}
+  .poll-options .opt.navy{background:#000004;color:#fff}
+  .footer-note{
+    position:absolute;bottom:50px;left:30px;right:30px;text-align:center;z-index:5;
+    font-size:11px;letter-spacing:5px;text-transform:uppercase;color:rgba(255,255,255,.7);font-weight:600;
+  }
+  .footer-note .accent{color:#FF5C50}
+</style>
+</head>
+<body>
+<div class="story">
+  <div class="brand-top"><span class="r">●</span> LOREM IPSUM</div>
+  <div class="brand-meta">No. 04 / Series</div>
+  <div class="ask-label">— We want to know</div>
+  <div class="question">Lorem <em>ipsum</em><br/>dolor sit?</div>
+  <div class="poll-sticker">
+    <div class="q">Tap your answer</div>
+    <div class="poll-options">
+      <div class="opt red">Lorem</div>
+      <div class="opt navy">Ipsum</div>
+    </div>
+  </div>
+  <div class="footer-note">— Your voice <span class="accent">matters</span> —</div>
+</div>
+</body>
+</html>

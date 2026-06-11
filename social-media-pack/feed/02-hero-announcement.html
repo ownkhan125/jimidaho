@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Feed 02 — Hero Announcement</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#1a1a1a;display:flex;align-items:center;justify-content:center;min-height:100vh}
+  .post{
+    width:1080px;height:1080px;position:relative;overflow:hidden;color:#fff;font-family:'Montserrat',sans-serif;
+    background:
+      linear-gradient(180deg, rgba(0,0,4,.2) 0%, rgba(0,26,62,.7) 50%, rgba(0,0,4,.95) 100%),
+      url('https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=1200&q=80') center/cover;
+  }
+  .corner-tl{position:absolute;top:60px;left:60px;display:flex;align-items:center;gap:18px}
+  .badge{padding:10px 18px;border:1px solid rgba(255,255,255,.4);font-size:11px;letter-spacing:4px;text-transform:uppercase;backdrop-filter:blur(8px);background:rgba(255,255,255,.05)}
+  .corner-tr{position:absolute;top:60px;right:60px;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.6)}
+  .eyebrow{
+    position:absolute;left:60px;bottom:480px;
+    font-size:13px;letter-spacing:8px;text-transform:uppercase;color:#FF5C50;font-weight:600;
+    display:flex;align-items:center;gap:14px;
+  }
+  .eyebrow .line{width:40px;height:1px;background:#FF5C50}
+  .headline{
+    position:absolute;left:60px;right:60px;bottom:200px;
+    font-family:'Playfair Display',serif;font-weight:900;
+    font-size:120px;line-height:.95;letter-spacing:-3px;
+  }
+  .headline .italic{font-style:italic;font-weight:400;color:#FF5C50}
+  .sub{
+    position:absolute;left:60px;bottom:120px;right:60px;
+    font-size:15px;letter-spacing:1px;color:rgba(255,255,255,.7);max-width:600px;line-height:1.5;
+  }
+  .footer{position:absolute;left:60px;right:60px;bottom:50px;display:flex;justify-content:space-between;align-items:center;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.5)}
+  .red-stripe{position:absolute;left:0;top:0;bottom:0;width:6px;background:#FF0D00}
+  .circle{position:absolute;width:200px;height:200px;border:1px solid rgba(255,255,255,.15);border-radius:50%;top:120px;right:140px}
+  .circle.small{width:80px;height:80px;top:180px;right:80px;background:rgba(255,13,0,.15);border-color:rgba(255,13,0,.4)}
+</style>
+</head>
+<body>
+<div class="post">
+  <div class="red-stripe"></div>
+  <div class="circle"></div>
+  <div class="circle small"></div>
+  <div class="corner-tl">
+    <div class="badge">Announcement</div>
+  </div>
+  <div class="corner-tr">06 · 11 · 2026</div>
+  <div class="eyebrow"><span class="line"></span>Now Introducing</div>
+  <div class="headline">A New<br/><span class="italic">Chapter.</span></div>
+  <div class="sub">Lorem ipsum dolor sit amet consectetur adipiscing elit — a moment that has been years in the making.</div>
+  <div class="footer">
+    <div>@loremipsum</div>
+    <div>Read More →</div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Story 01 — Vertical Quote</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#1a1a1a;display:flex;align-items:center;justify-content:center;min-height:100vh;font-family:'Montserrat',sans-serif;padding:20px}
+  .story{
+    width:540px;height:960px;position:relative;overflow:hidden;color:#fff;
+    background:radial-gradient(ellipse at 20% 80%, #003680 0%, #001A3E 40%, #000004 100%);
+  }
+  .grain{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.04) 1px, transparent 1px);background-size:3px 3px;pointer-events:none}
+  .eyebrow{
+    position:absolute;left:40px;top:90px;
+    font-size:10px;letter-spacing:5px;text-transform:uppercase;color:#FF5C50;font-weight:600;
+  }
+  .quote-mark{
+    position:absolute;left:30px;top:130px;
+    font-family:'Playfair Display',serif;font-weight:900;font-style:italic;font-size:300px;line-height:.7;
+    color:#FF0D00;opacity:.9;
+  }
+  .quote{
+    position:absolute;left:40px;right:40px;top:360px;
+    font-family:'Playfair Display',serif;font-weight:400;font-size:44px;line-height:1.2;letter-spacing:-.5px;
+  }
+  .quote em{font-style:italic;color:#FF5C50}
+  .author-block{position:absolute;left:40px;bottom:90px}
+  .author-block .bar{width:40px;height:2px;background:#FF0D00;margin-bottom:14px}
+  .author-block .name{font-family:'Playfair Display',serif;font-weight:900;font-size:22px}
+  .author-block .role{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.6);margin-top:6px}
+  .brand-mark{position:absolute;bottom:40px;right:40px;font-family:'Playfair Display',serif;font-weight:900;font-size:12px;letter-spacing:2px;color:rgba(255,255,255,.5)}
+  .brand-mark .r{color:#FF0D00}
+  .vertical-text{position:absolute;right:18px;top:50%;transform:translateY(-50%) rotate(180deg);writing-mode:vertical-rl;font-size:9px;letter-spacing:5px;text-transform:uppercase;color:rgba(255,255,255,.3)}
+</style>
+</head>
+<body>
+<div class="story">
+  <div class="grain"></div>
+  <div class="eyebrow">— Word of the day</div>
+  <div class="quote-mark">"</div>
+  <div class="quote">Lorem ipsum <em>dolor</em> sit amet — courage is the quiet voice at the end of the day.</div>
+  <div class="author-block">
+    <div class="bar"></div>
+    <div class="name">A. Hartwell</div>
+    <div class="role">Community Voice</div>
+  </div>
+  <div class="vertical-text">Lorem · Ipsum · Series 01</div>
+  <div class="brand-mark"><span class="r">●</span> LOREM IPSUM</div>
+</div>
+</body>
+</html>

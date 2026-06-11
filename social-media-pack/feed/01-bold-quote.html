@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Feed 01 — Bold Quote</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#1a1a1a;display:flex;align-items:center;justify-content:center;min-height:100vh;font-family:'Montserrat',sans-serif}
+  .post{
+    width:1080px;height:1080px;position:relative;overflow:hidden;
+    background:radial-gradient(ellipse at 30% 20%, #003680 0%, #001A3E 40%, #000004 100%);
+    color:#fff;
+  }
+  .grain{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.04) 1px, transparent 1px);background-size:3px 3px;mix-blend-mode:overlay;pointer-events:none}
+  .watermark{position:absolute;top:-40px;left:-60px;font-family:'Playfair Display',serif;font-weight:900;font-size:520px;line-height:.8;color:#FF0D00;opacity:.06;letter-spacing:-10px}
+  .corner{position:absolute;top:60px;right:60px;display:flex;align-items:center;gap:14px}
+  .corner .dot{width:10px;height:10px;background:#FF0D00;border-radius:50%}
+  .corner .label{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:#9C958C}
+  .quote-mark{position:absolute;top:140px;left:90px;font-family:'Playfair Display',serif;font-weight:900;font-size:280px;color:#FF0D00;line-height:.7}
+  .quote{
+    position:absolute;left:90px;right:120px;top:340px;
+    font-family:'Playfair Display',serif;font-weight:400;font-size:76px;line-height:1.12;
+    letter-spacing:-1.5px;
+  }
+  .quote em{font-style:italic;color:#FF5C50}
+  .author{position:absolute;left:90px;bottom:130px;display:flex;align-items:center;gap:24px}
+  .author .bar{width:60px;height:2px;background:#FF0D00}
+  .author .name{font-family:'Playfair Display',serif;font-weight:700;font-size:22px;letter-spacing:.5px}
+  .author .role{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#9C958C;margin-top:6px}
+  .footer{position:absolute;left:90px;bottom:60px;display:flex;justify-content:space-between;align-items:center;width:calc(100% - 180px)}
+  .footer .brand{font-family:'Playfair Display',serif;font-weight:900;font-size:16px;letter-spacing:1px}
+  .footer .brand .red{color:#FF0D00}
+  .footer .meta{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#6B6560}
+  .stripe{position:absolute;right:0;top:0;bottom:0;width:8px;background:linear-gradient(180deg,#FF0D00 0%, #FF0D00 40%, #001A3E 40%, #001A3E 100%)}
+</style>
+</head>
+<body>
+<div class="post">
+  <div class="watermark">VOX</div>
+  <div class="grain"></div>
+  <div class="corner"><span class="dot"></span><span class="label">Vol. 01 · Edition I</span></div>
+  <div class="quote-mark">"</div>
+  <div class="quote">Lorem ipsum dolor sit amet, <em>consectetur</em> adipiscing — the future belongs to those who build it.</div>
+  <div class="author">
+    <div class="bar"></div>
+    <div>
+      <div class="name">Aurelia Hartwell</div>
+      <div class="role">Community Advocate</div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="brand"><span class="red">LOREM</span> IPSUM</div>
+    <div class="meta">@loremipsum · 2026</div>
+  </div>
+  <div class="stripe"></div>
+</div>
+</body>
+</html>
