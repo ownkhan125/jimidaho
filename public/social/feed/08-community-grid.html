@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Feed 08 — Community Grid</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#1a1a1a;display:flex;align-items:center;justify-content:center;min-height:100vh;font-family:'Montserrat',sans-serif}
+  .post{width:1080px;height:1080px;position:relative;overflow:hidden;background:#000004}
+  .grid{position:absolute;inset:0;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(3,1fr);gap:4px;background:#000004}
+  .cell{position:relative;overflow:hidden;background-size:cover;background-position:center}
+  .cell::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg, rgba(0,0,4,.2) 0%, rgba(0,26,62,.4) 100%)}
+  .c1{background-image:url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=500&q=80')}
+  .c2{background-image:url('https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=500&q=80')}
+  .c3{background-image:url('https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=500&q=80')}
+  .c4{background-image:url('https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=500&q=80')}
+  .c5{background:#FF0D00 !important}
+  .c5::after{display:none}
+  .c6{background-image:url('https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=500&q=80')}
+  .c7{background-image:url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&q=80')}
+  .c8{background-image:url('https://images.unsplash.com/photo-1521791136064-7986c2920216?w=500&q=80')}
+  .c9{background-image:url('https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=500&q=80')}
+  .center-card{
+    position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+    color:#fff;text-align:center;z-index:10;padding:40px;
+  }
+  .center-card .eyebrow{font-size:11px;letter-spacing:6px;text-transform:uppercase;color:#fff;font-weight:600;margin-bottom:14px}
+  .center-card .title{font-family:'Playfair Display',serif;font-weight:900;font-size:90px;line-height:.9;letter-spacing:-2px;text-shadow:0 4px 24px rgba(0,0,0,.6)}
+  .center-card .title em{font-style:italic;font-weight:400;color:#fff}
+  .center-card .pill{display:inline-flex;align-items:center;gap:10px;margin-top:22px;background:rgba(255,255,255,.1);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.2);padding:12px 22px;font-size:11px;letter-spacing:3px;text-transform:uppercase}
+  .center-card .pill .dot{width:8px;height:8px;background:#FF0D00;border-radius:50%}
+  .top-tag{position:absolute;top:40px;left:50%;transform:translateX(-50%);z-index:20;background:#000004;color:#fff;padding:14px 28px;font-size:10px;letter-spacing:4px;text-transform:uppercase;border:1px solid rgba(255,255,255,.2)}
+  .bottom-tag{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);z-index:20;background:#fff;color:#000004;padding:14px 28px;font-family:'Playfair Display',serif;font-weight:900;font-size:12px;letter-spacing:2px}
+</style>
+</head>
+<body>
+<div class="post">
+  <div class="grid">
+    <div class="cell c1"></div>
+    <div class="cell c2"></div>
+    <div class="cell c3"></div>
+    <div class="cell c4"></div>
+    <div class="cell c5"></div>
+    <div class="cell c6"></div>
+    <div class="cell c7"></div>
+    <div class="cell c8"></div>
+    <div class="cell c9"></div>
+  </div>
+  <div class="top-tag">— The Mosaic Edit —</div>
+  <div class="center-card">
+    <div class="eyebrow">Community Impact</div>
+    <div class="title">One <em>town,</em><br/>many voices.</div>
+    <div class="pill"><span class="dot"></span>Lorem Ipsum 2026 Series</div>
+  </div>
+  <div class="bottom-tag">● LOREM IPSUM</div>
+</div>
+</body>
+</html>

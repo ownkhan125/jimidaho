@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Story 08 — Stacked Cards</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#1a1a1a;display:flex;align-items:center;justify-content:center;min-height:100vh;font-family:'Montserrat',sans-serif;padding:20px}
+  .story{
+    width:540px;height:960px;position:relative;overflow:hidden;color:#000004;
+    background:#E8E4DF;
+  }
+  .grain{position:absolute;inset:0;background-image:radial-gradient(rgba(0,0,4,.04) 1px, transparent 1px);background-size:4px 4px;pointer-events:none}
+  .red-corner{position:absolute;top:-100px;right:-100px;width:300px;height:300px;background:#FF0D00;border-radius:50%;opacity:.95;filter:blur(2px)}
+  .brand-top{position:absolute;top:50px;left:30px;font-family:'Playfair Display',serif;font-weight:900;font-size:13px;letter-spacing:2px;color:#000004;z-index:10}
+  .brand-top .r{color:#FF0D00}
+  .brand-meta{position:absolute;top:50px;right:30px;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#6B6560;font-weight:600;z-index:10}
+  .eyebrow-top{position:absolute;top:120px;left:30px;font-size:10px;letter-spacing:5px;text-transform:uppercase;color:#000004;font-weight:700;z-index:5;display:flex;align-items:center;gap:10px}
+  .eyebrow-top .line{width:30px;height:1px;background:#000004}
+  .heading{position:absolute;top:160px;left:30px;right:30px;z-index:5;font-family:'Playfair Display',serif;font-weight:900;font-style:italic;font-size:56px;line-height:.95;letter-spacing:-1.5px;color:#000004}
+  .heading .red{color:#FF0D00}
+  .card{
+    position:absolute;left:30px;right:30px;
+    background:#fff;padding:24px 26px;border-radius:14px;
+    box-shadow:0 14px 36px rgba(0,0,4,.12);
+    z-index:5;
+  }
+  .card .meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+  .card .meta .src{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#FF0D00;font-weight:700}
+  .card .meta .num{font-family:'Playfair Display',serif;font-weight:900;font-size:20px;color:#9C958C}
+  .card .text{font-family:'Playfair Display',serif;font-weight:400;font-size:18px;line-height:1.35;color:#000004}
+  .card .text em{font-style:italic;color:#FF0D00}
+  .card .attrib{margin-top:14px;display:flex;align-items:center;gap:10px;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#6B6560;font-weight:600}
+  .card .attrib .dot{width:6px;height:6px;background:#FF0D00;border-radius:50%}
+  .card1{top:330px;transform:rotate(-2deg);z-index:6}
+  .card2{top:510px;transform:rotate(1.5deg);z-index:7}
+  .card3{top:690px;transform:rotate(-1deg);z-index:8}
+  .footer{position:absolute;bottom:30px;left:30px;right:30px;text-align:center;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:#6B6560;font-weight:700;z-index:10;display:flex;justify-content:space-between}
+  .footer strong{color:#000004}
+</style>
+</head>
+<body>
+<div class="story">
+  <div class="red-corner"></div>
+  <div class="grain"></div>
+  <div class="brand-top"><span class="r">●</span> LOREM IPSUM</div>
+  <div class="brand-meta">No. 08 / Series</div>
+  <div class="eyebrow-top"><span class="line"></span>What people are saying</div>
+  <div class="heading">Voices, in their<br/>own <span class="red">words.</span></div>
+  <div class="card card1">
+    <div class="meta"><span class="src">Voice 01</span><span class="num">"</span></div>
+    <div class="text">Lorem ipsum dolor sit <em>amet</em> — finally a campaign that listens.</div>
+    <div class="attrib"><span class="dot"></span>M. Delacroix · District 4</div>
+  </div>
+  <div class="card card2">
+    <div class="meta"><span class="src">Voice 02</span><span class="num">"</span></div>
+    <div class="text">Consectetur adipiscing elit — <em>change</em> we can actually feel.</div>
+    <div class="attrib"><span class="dot"></span>R. Okonkwo · District 7</div>
+  </div>
+  <div class="card card3">
+    <div class="meta"><span class="src">Voice 03</span><span class="num">"</span></div>
+    <div class="text">Sed do eiusmod tempor incididunt <em>ut labore</em> — long overdue.</div>
+    <div class="attrib"><span class="dot"></span>A. Hartwell · District 2</div>
+  </div>
+  <div class="footer">
+    <span><strong>VOICES SERIES</strong></span>
+    <span>Vol. III</span>
+  </div>
+</div>
+</body>
+</html>

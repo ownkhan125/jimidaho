@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Story 05 — Editorial Polaroid</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400&family=Montserrat:wght@300;400;500;600;700&family=Caveat:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#1a1a1a;display:flex;align-items:center;justify-content:center;min-height:100vh;font-family:'Montserrat',sans-serif;padding:20px}
+  .story{
+    width:540px;height:960px;position:relative;overflow:hidden;color:#000004;
+    background:#F5F3F0;
+  }
+  .paper-tex{position:absolute;inset:0;background-image:radial-gradient(rgba(0,0,4,.03) 1px, transparent 1px);background-size:6px 6px;pointer-events:none}
+  .header-line{position:absolute;top:60px;left:30px;right:30px;display:flex;justify-content:space-between;align-items:center;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#9C958C;border-bottom:1px solid #D4CEC6;padding-bottom:18px;z-index:10}
+  .header-line .title{font-family:'Playfair Display',serif;font-weight:900;font-style:italic;color:#FF0D00;font-size:14px;letter-spacing:0}
+  .polaroid{
+    position:absolute;background:#fff;padding:14px 14px 60px;
+    box-shadow:0 20px 50px rgba(0,0,4,.25);
+  }
+  .polaroid img, .polaroid .img{display:block;width:100%;height:100%;object-fit:cover}
+  .polaroid .img{background-size:cover;background-position:center}
+  .polaroid .caption{
+    position:absolute;bottom:14px;left:14px;right:14px;text-align:center;
+    font-family:'Caveat',cursive;font-weight:700;font-size:20px;color:#3A3632;
+  }
+  .p1{top:140px;left:40px;width:220px;height:280px;transform:rotate(-7deg);z-index:3}
+  .p1 .img{height:212px;background-image:url('https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&q=80')}
+  .p2{top:170px;right:30px;width:215px;height:270px;transform:rotate(5deg);z-index:2}
+  .p2 .img{height:206px;background-image:url('https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=400&q=80')}
+  .p3{top:380px;left:75px;width:215px;height:270px;transform:rotate(3deg);z-index:1}
+  .p3 .img{height:206px;background-image:url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&q=80')}
+  .tape{position:absolute;background:rgba(255,13,0,.4);width:60px;height:18px}
+  .tape.t1{top:125px;left:120px;transform:rotate(-15deg);z-index:4}
+  .tape.t2{top:160px;right:78px;transform:rotate(8deg);z-index:4}
+  .caption-block{
+    position:absolute;left:30px;right:30px;bottom:80px;text-align:left;z-index:10;
+  }
+  .caption-block .eyebrow{font-size:10px;letter-spacing:5px;text-transform:uppercase;color:#FF0D00;font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+  .caption-block .eyebrow .line{width:30px;height:1px;background:#FF0D00}
+  .caption-block .title{font-family:'Playfair Display',serif;font-weight:900;font-size:42px;line-height:1;letter-spacing:-1px;color:#000004}
+  .caption-block .title em{font-style:italic;color:#FF0D00;font-weight:400}
+  .footer-mark{position:absolute;bottom:30px;left:30px;right:30px;display:flex;justify-content:space-between;align-items:center;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#9C958C;font-weight:700;z-index:10}
+</style>
+</head>
+<body>
+<div class="story">
+  <div class="paper-tex"></div>
+  <div class="header-line">
+    <span class="title">— Field Notes —</span>
+    <span>Vol. 05</span>
+  </div>
+  <div class="tape t1"></div>
+  <div class="polaroid p1"><div class="img"></div><div class="caption">summer mornings</div></div>
+  <div class="tape t2"></div>
+  <div class="polaroid p2"><div class="img"></div><div class="caption">on the road</div></div>
+  <div class="polaroid p3"><div class="img"></div><div class="caption">together again</div></div>
+  <div class="caption-block">
+    <div class="eyebrow"><span class="line"></span>From the journal</div>
+    <div class="title">Three days,<br/>one <em>community.</em></div>
+  </div>
+  <div class="footer-mark">
+    <span>● LOREM IPSUM</span>
+    <span>No. 05</span>
+  </div>
+</div>
+</body>
+</html>

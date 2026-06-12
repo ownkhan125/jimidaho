@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Feed 04 — Event Date</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#1a1a1a;display:flex;align-items:center;justify-content:center;min-height:100vh;font-family:'Montserrat',sans-serif}
+  .post{
+    width:1080px;height:1080px;position:relative;overflow:hidden;color:#F8F9FA;
+    background:#F5F3F0;
+  }
+  .top-band{
+    position:absolute;top:0;left:0;right:0;height:120px;background:#000004;
+    display:flex;align-items:center;justify-content:space-between;padding:0 60px;
+  }
+  .top-band .brand{font-family:'Playfair Display',serif;font-weight:900;font-size:18px;letter-spacing:2px;color:#fff}
+  .top-band .brand .red{color:#FF0D00}
+  .top-band .menu{display:flex;gap:30px;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.6)}
+  .date-block{
+    position:absolute;top:200px;left:60px;color:#000004;
+  }
+  .date-block .month{font-family:'Montserrat',sans-serif;font-weight:700;font-size:18px;letter-spacing:8px;text-transform:uppercase;color:#FF0D00}
+  .date-day{
+    font-family:'Playfair Display',serif;font-weight:900;font-style:italic;font-size:520px;line-height:.85;letter-spacing:-15px;color:#000004;
+    margin-top:-20px;
+  }
+  .date-day .ord{font-size:120px;vertical-align:super;font-style:normal;color:#FF0D00;margin-left:-30px}
+  .right-meta{
+    position:absolute;top:280px;right:60px;text-align:right;color:#000004;
+  }
+  .right-meta .yr{font-family:'Playfair Display',serif;font-weight:400;font-style:italic;font-size:32px}
+  .right-meta .yr-num{font-family:'Playfair Display',serif;font-weight:900;font-size:90px;line-height:.9;letter-spacing:-3px;display:block}
+  .divider{position:absolute;left:60px;right:60px;top:740px;height:1px;background:rgba(0,0,4,.2)}
+  .event-title{
+    position:absolute;left:60px;top:780px;color:#000004;
+    font-family:'Playfair Display',serif;font-weight:900;font-size:64px;line-height:.95;letter-spacing:-1.5px;max-width:700px;
+  }
+  .event-title em{font-style:italic;color:#FF0D00;font-weight:400}
+  .details{
+    position:absolute;right:60px;top:790px;text-align:right;color:#3A3632;
+  }
+  .details .row{margin-bottom:14px}
+  .details .label{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#9C958C;margin-bottom:4px}
+  .details .val{font-family:'Playfair Display',serif;font-weight:700;font-size:16px}
+  .bottom-cta{position:absolute;bottom:40px;left:60px;right:60px;display:flex;justify-content:space-between;align-items:center;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#6B6560}
+  .bottom-cta .rsvp{background:#FF0D00;color:#fff;padding:14px 28px;font-weight:600;letter-spacing:3px}
+</style>
+</head>
+<body>
+<div class="post">
+  <div class="top-band">
+    <div class="brand"><span class="red">●</span> &nbsp;LOREM IPSUM</div>
+    <div class="menu"><span>The Edit</span><span>Vol. 04</span></div>
+  </div>
+  <div class="date-block">
+    <div class="month">— Save the date</div>
+    <div class="date-day">14<span class="ord">th</span></div>
+  </div>
+  <div class="right-meta">
+    <div class="yr">September,</div>
+    <div class="yr-num">2026</div>
+  </div>
+  <div class="divider"></div>
+  <div class="event-title">The Town Hall<br/><em>Gathering.</em></div>
+  <div class="details">
+    <div class="row"><div class="label">Time</div><div class="val">6:30 PM</div></div>
+    <div class="row"><div class="label">Venue</div><div class="val">Civic Hall</div></div>
+  </div>
+  <div class="bottom-cta">
+    <span>Limited Seating · RSVP Required</span>
+    <span class="rsvp">RSVP Now →</span>
+  </div>
+</div>
+</body>
+</html>

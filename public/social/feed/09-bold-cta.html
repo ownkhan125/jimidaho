@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Feed 09 — Bold CTA</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#1a1a1a;display:flex;align-items:center;justify-content:center;min-height:100vh;font-family:'Montserrat',sans-serif}
+  .post{
+    width:1080px;height:1080px;position:relative;overflow:hidden;
+    background:linear-gradient(180deg,#FF0D00 0%, #D80B00 100%);color:#fff;
+  }
+  .grain{position:absolute;inset:0;background-image:radial-gradient(rgba(0,0,0,.05) 1px, transparent 1px);background-size:5px 5px;pointer-events:none}
+  .watermark{position:absolute;font-family:'Playfair Display',serif;font-weight:900;font-style:italic;font-size:780px;line-height:.8;color:rgba(255,255,255,.06);top:-100px;left:-80px;letter-spacing:-30px;pointer-events:none}
+  .top-band{position:absolute;top:60px;left:60px;right:60px;display:flex;justify-content:space-between;align-items:center;font-size:11px;letter-spacing:4px;text-transform:uppercase}
+  .top-band .left{display:flex;align-items:center;gap:14px}
+  .top-band .left .dot{width:8px;height:8px;background:#fff;border-radius:50%}
+  .arrow-big{
+    position:absolute;top:120px;right:70px;
+    font-family:'Playfair Display',serif;font-weight:900;font-style:italic;font-size:140px;line-height:1;color:rgba(255,255,255,.95);
+  }
+  .eyebrow-rotated{
+    position:absolute;left:80px;top:260px;
+    writing-mode:vertical-rl;transform:rotate(180deg);
+    font-size:11px;letter-spacing:8px;text-transform:uppercase;color:rgba(255,255,255,.85);font-weight:600;
+  }
+  .main{
+    position:absolute;left:170px;top:330px;right:60px;
+  }
+  .main .small{font-family:'Playfair Display',serif;font-style:italic;font-weight:400;font-size:46px;color:#fff;line-height:1}
+  .main .huge{
+    font-family:'Playfair Display',serif;font-weight:900;font-size:260px;line-height:.85;letter-spacing:-12px;
+    color:#fff;margin-top:14px;
+  }
+  .main .huge .underline{
+    background:linear-gradient(180deg, transparent 70%, #000004 70%, #000004 88%, transparent 88%);
+    padding:0 4px;
+  }
+  .meta-row{
+    position:absolute;left:170px;right:60px;top:780px;
+    display:flex;gap:60px;
+  }
+  .meta-row .item .label{font-size:10px;letter-spacing:3px;text-transform:uppercase;opacity:.8;margin-bottom:6px}
+  .meta-row .item .val{font-family:'Playfair Display',serif;font-weight:900;font-size:28px}
+  .cta{
+    position:absolute;left:60px;right:60px;bottom:60px;
+    background:#000004;color:#fff;padding:36px 40px;
+    display:flex;justify-content:space-between;align-items:center;
+  }
+  .cta .text{font-family:'Playfair Display',serif;font-weight:900;font-size:34px;letter-spacing:-1px}
+  .cta .text em{font-style:italic;color:#FF0D00;font-weight:400}
+  .cta .btn{background:#FF0D00;padding:18px 26px;font-size:12px;letter-spacing:3px;text-transform:uppercase;font-weight:700}
+</style>
+</head>
+<body>
+<div class="post">
+  <div class="watermark">VOTE</div>
+  <div class="grain"></div>
+  <div class="top-band">
+    <div class="left"><span class="dot"></span>Call to Action · No. 09</div>
+    <div>Lorem · Ipsum · MMXXVI</div>
+  </div>
+  <div class="arrow-big">↘</div>
+  <div class="eyebrow-rotated">— Make it count —</div>
+  <div class="main">
+    <div class="small">It's time to —</div>
+    <div class="huge"><span class="underline">act.</span></div>
+  </div>
+  <div class="meta-row">
+    <div class="item"><div class="label">When</div><div class="val">Now</div></div>
+    <div class="item"><div class="label">Where</div><div class="val">Anywhere</div></div>
+    <div class="item"><div class="label">Who</div><div class="val">You</div></div>
+  </div>
+  <div class="cta">
+    <div class="text">Lorem ipsum <em>dolor</em> sit amet.</div>
+    <div class="btn">Join Today →</div>
+  </div>
+</div>
+</body>
+</html>

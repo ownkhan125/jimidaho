@@ -14,6 +14,7 @@ const COLS = [
       { label: 'The Platform', href: '/platform' },
       { label: 'Upcoming Events', href: '/events' },
       { label: 'Endorsements', href: '/endorsements' },
+      { label: 'Social Library', href: '/social-media-posts' },
     ],
   },
   {

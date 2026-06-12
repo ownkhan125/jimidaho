@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Story 09 — Big Announcement</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#1a1a1a;display:flex;align-items:center;justify-content:center;min-height:100vh;font-family:'Montserrat',sans-serif;padding:20px}
+  .story{
+    width:540px;height:960px;position:relative;overflow:hidden;color:#fff;
+    background:#000004;
+  }
+  .red-arch{
+    position:absolute;top:30%;left:50%;transform:translate(-50%,-50%);
+    width:560px;height:560px;border-radius:50%;
+    background:radial-gradient(circle at 30% 30%, #FF0D00 0%, #D80B00 60%, #001A3E 110%);
+    filter:blur(0px);
+  }
+  .blur-disc{position:absolute;top:18%;left:42%;width:220px;height:220px;border-radius:50%;background:rgba(255,92,80,.6);filter:blur(50px)}
+  .grain{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.06) 1px, transparent 1px);background-size:3px 3px;pointer-events:none}
+  .frame{position:absolute;inset:18px;border:1px solid rgba(255,255,255,.18);pointer-events:none;z-index:4}
+  .brand-top{position:absolute;top:50px;left:40px;font-family:'Playfair Display',serif;font-weight:900;font-size:13px;letter-spacing:2px;color:#fff;z-index:5}
+  .brand-top .r{color:#FF0D00}
+  .brand-meta{position:absolute;top:50px;right:40px;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.6);font-weight:600;z-index:5}
+  .eyebrow{position:absolute;top:130px;left:0;right:0;text-align:center;font-size:11px;letter-spacing:8px;text-transform:uppercase;font-weight:700;color:rgba(255,255,255,.85);z-index:5}
+  .small-italic{position:absolute;top:200px;left:0;right:0;text-align:center;font-family:'Playfair Display',serif;font-style:italic;font-weight:400;font-size:38px;color:#fff;z-index:5}
+  .huge{
+    position:absolute;top:260px;left:0;right:0;text-align:center;z-index:5;
+    font-family:'Playfair Display',serif;font-weight:900;font-size:200px;line-height:.85;letter-spacing:-7px;
+    color:#fff;
+  }
+  .badge{
+    position:absolute;top:540px;left:50%;transform:translateX(-50%);
+    background:rgba(0,0,4,.7);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.2);
+    padding:14px 24px;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:#fff;font-weight:700;z-index:5;
+  }
+  .details{
+    position:absolute;bottom:170px;left:30px;right:30px;text-align:center;z-index:5;
+  }
+  .details .title{font-family:'Playfair Display',serif;font-weight:900;font-size:36px;line-height:1;letter-spacing:-1px;color:#fff}
+  .details .title em{font-style:italic;color:#FF5C50;font-weight:400}
+  .details .sub{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.6);margin-top:14px;font-weight:600}
+  .cta{
+    position:absolute;bottom:50px;left:30px;right:30px;
+    background:#fff;color:#000004;padding:18px 24px;text-align:center;
+    font-size:11px;letter-spacing:4px;text-transform:uppercase;font-weight:700;z-index:5;
+  }
+  .cta strong{color:#FF0D00}
+</style>
+</head>
+<body>
+<div class="story">
+  <div class="red-arch"></div>
+  <div class="blur-disc"></div>
+  <div class="grain"></div>
+  <div class="frame"></div>
+  <div class="brand-top"><span class="r">●</span> LOREM IPSUM</div>
+  <div class="brand-meta">No. 09 / Series</div>
+  <div class="eyebrow">— Announcement —</div>
+  <div class="small-italic">It's officially</div>
+  <div class="huge">ON.</div>
+  <div class="badge">— Mark the moment —</div>
+  <div class="details">
+    <div class="title">Lorem ipsum <em>dolor</em><br/>begins now.</div>
+    <div class="sub">Sed do eiusmod tempor</div>
+  </div>
+  <div class="cta">Get the details &nbsp;<strong>→</strong></div>
+</div>
+</body>
+</html>

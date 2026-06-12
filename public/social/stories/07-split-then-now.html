@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Story 07 — Then / Now Split</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#1a1a1a;display:flex;align-items:center;justify-content:center;min-height:100vh;font-family:'Montserrat',sans-serif;padding:20px}
+  .story{width:540px;height:960px;position:relative;overflow:hidden;color:#fff;background:#000004}
+  .top-half{
+    position:absolute;top:0;left:0;right:0;height:50%;overflow:hidden;
+    background:url('https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80') center/cover;
+    filter:grayscale(1);
+  }
+  .top-half::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,4,.3) 0%, rgba(0,0,4,.7) 100%)}
+  .bot-half{
+    position:absolute;bottom:0;left:0;right:0;height:50%;overflow:hidden;
+    background:url('https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=800&q=80') center/cover;
+  }
+  .bot-half::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg, rgba(255,13,0,.4) 0%, rgba(0,0,4,.1) 100%)}
+  .center-band{
+    position:absolute;top:50%;left:0;right:0;height:90px;transform:translateY(-50%);
+    background:#fff;display:flex;align-items:center;justify-content:center;
+    z-index:5;
+  }
+  .center-band .vs{font-family:'Playfair Display',serif;font-weight:900;font-style:italic;font-size:64px;color:#000004;letter-spacing:-2px}
+  .center-band .vs .red{color:#FF0D00}
+  .brand-top{position:absolute;top:40px;left:30px;font-family:'Playfair Display',serif;font-weight:900;font-size:13px;letter-spacing:2px;color:#fff;z-index:10}
+  .brand-top .r{color:#FF0D00}
+  .brand-meta{position:absolute;top:40px;right:30px;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.7);font-weight:600;z-index:10}
+  .top-label{
+    position:absolute;top:110px;left:30px;z-index:5;
+  }
+  .top-label .tag{display:inline-block;font-size:10px;letter-spacing:4px;text-transform:uppercase;background:rgba(255,255,255,.1);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.25);padding:6px 12px;margin-bottom:14px;font-weight:600}
+  .top-label h2{font-family:'Playfair Display',serif;font-weight:900;font-style:italic;font-size:80px;line-height:.9;letter-spacing:-2px}
+  .top-label .desc{font-size:12px;color:rgba(255,255,255,.7);margin-top:14px;max-width:250px;line-height:1.5;font-style:italic;font-family:'Playfair Display',serif}
+  .bot-label{
+    position:absolute;bottom:120px;right:30px;text-align:right;z-index:5;
+  }
+  .bot-label .tag{display:inline-block;font-size:10px;letter-spacing:4px;text-transform:uppercase;background:#FF0D00;padding:6px 12px;margin-bottom:14px;font-weight:700}
+  .bot-label h2{font-family:'Playfair Display',serif;font-weight:900;font-style:italic;font-size:80px;line-height:.9;letter-spacing:-2px}
+  .bot-label .desc{font-size:12px;color:rgba(255,255,255,.85);margin-top:14px;max-width:250px;line-height:1.5;font-style:italic;font-family:'Playfair Display',serif;margin-left:auto}
+  .footer{position:absolute;bottom:30px;left:30px;right:30px;text-align:center;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:rgba(255,255,255,.7);font-weight:600;z-index:10}
+</style>
+</head>
+<body>
+<div class="story">
+  <div class="top-half"></div>
+  <div class="bot-half"></div>
+  <div class="center-band"><div class="vs">Then <span class="red">/</span> Now</div></div>
+  <div class="brand-top"><span class="r">●</span> LOREM IPSUM</div>
+  <div class="brand-meta">No. 07 / Series</div>
+  <div class="top-label">
+    <div class="tag">2016</div>
+    <h2>Lorem.</h2>
+    <div class="desc">Sed do eiusmod tempor incididunt — quiet beginnings.</div>
+  </div>
+  <div class="bot-label">
+    <div class="tag">2026</div>
+    <h2>Ipsum.</h2>
+    <div class="desc">Ut labore et dolore — a movement made loud.</div>
+  </div>
+  <div class="footer">— A decade of <span style="color:#FF5C50">change</span> —</div>
+</div>
+</body>
+</html>

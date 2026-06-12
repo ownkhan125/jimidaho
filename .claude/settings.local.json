@@ -39,7 +39,18 @@
       "Bash(grep -l ';$' C:/Users/General/Documents/GitHub/JimIdaho/src -r)",
       "Bash(npx prettier *)",
       "Bash(node -e ' *)",
-      "Bash(node run.js .tmp-smoke.js)"
+      "Bash(node run.js .tmp-smoke.js)",
+      "Bash(mkdir -p \"C:/Users/General/Documents/GitHub/JimIdaho/public/social/feed\" \"C:/Users/General/Documents/GitHub/JimIdaho/public/social/stories\")",
+      "Bash(cp \"C:/Users/General/Documents/GitHub/JimIdaho/social-media-pack/feed/\"*.html \"C:/Users/General/Documents/GitHub/JimIdaho/public/social/feed/\")",
+      "Bash(cp \"C:/Users/General/Documents/GitHub/JimIdaho/social-media-pack/stories/\"*.html \"C:/Users/General/Documents/GitHub/JimIdaho/public/social/stories/\")",
+      "Bash(node -e \"require\\('./lib/helpers'\\).detectDevServers\\(\\).then\\(servers => console.log\\(JSON.stringify\\(servers\\)\\)\\)\")",
+      "Bash(node run.js /tmp/playwright-test-social.js)",
+      "Bash(grep -lE \"captured$|console\\\\.log\\\\\\('feed/\" \"C:/Users/General/Documents/GitHub/JimIdaho/.claude/skills/playwright-skill/\")",
+      "Bash(node run.js \".test-social.js\")",
+      "Bash(PORT=3007 npm run dev)",
+      "Bash(echo \"started, pid=$!\")",
+      "Bash(node run.js \".test-fullview.js\")",
+      "Bash(node run.js \".test-nav.js\")"
     ]
   }
 }

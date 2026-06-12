@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Story 02 — Full-Bleed Photo</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#1a1a1a;display:flex;align-items:center;justify-content:center;min-height:100vh;font-family:'Montserrat',sans-serif;padding:20px}
+  .story{
+    width:540px;height:960px;position:relative;overflow:hidden;color:#fff;
+    background:url('https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=900&q=80') center/cover;
+  }
+  .top-overlay{
+    position:absolute;top:0;left:0;right:0;height:200px;
+    background:linear-gradient(180deg, rgba(0,0,4,.55) 0%, transparent 100%);
+  }
+  .bottom-overlay{
+    position:absolute;bottom:0;left:0;right:0;height:480px;
+    background:linear-gradient(0deg, rgba(0,0,4,.95) 28%, rgba(0,0,4,.5) 70%, transparent 100%);
+  }
+  .corner-tag{position:absolute;top:50px;right:40px;background:#FF0D00;color:#fff;padding:10px 16px;font-size:10px;letter-spacing:4px;text-transform:uppercase;font-weight:700;z-index:5}
+  .brand-top{position:absolute;top:50px;left:40px;font-family:'Playfair Display',serif;font-weight:900;font-size:14px;letter-spacing:2px;color:#fff;z-index:5}
+  .brand-top .r{color:#FF0D00}
+  .content{position:absolute;left:40px;right:40px;bottom:120px;z-index:5}
+  .eyebrow{font-size:10px;letter-spacing:5px;text-transform:uppercase;color:#FF5C50;font-weight:600;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+  .eyebrow .line{width:24px;height:1px;background:#FF5C50}
+  .headline{font-family:'Playfair Display',serif;font-weight:900;font-size:64px;line-height:.95;letter-spacing:-1.5px}
+  .headline em{font-style:italic;color:#FF5C50;font-weight:400}
+  .sub{font-size:13px;color:rgba(255,255,255,.7);margin-top:18px;line-height:1.5;max-width:380px}
+  .cta-pill{
+    position:absolute;left:40px;right:40px;bottom:50px;
+    background:rgba(255,255,255,.1);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.2);
+    padding:18px 24px;display:flex;justify-content:space-between;align-items:center;
+    font-size:11px;letter-spacing:2px;text-transform:uppercase;z-index:5;
+  }
+  .cta-pill .arrow{font-family:'Playfair Display',serif;font-weight:900;font-size:18px}
+</style>
+</head>
+<body>
+<div class="story">
+  <div class="top-overlay"></div>
+  <div class="bottom-overlay"></div>
+  <div class="brand-top"><span class="r">●</span> LOREM IPSUM</div>
+  <div class="corner-tag">No. 02</div>
+  <div class="content">
+    <div class="eyebrow"><span class="line"></span>Behind the scenes</div>
+    <div class="headline">A day on<br/>the <em>road.</em></div>
+    <div class="sub">Lorem ipsum dolor sit amet consectetur — every conversation matters.</div>
+  </div>
+  <div class="cta-pill">
+    <span>Read the full story</span>
+    <span class="arrow">→</span>
+  </div>
+</div>
+</body>
+</html>
